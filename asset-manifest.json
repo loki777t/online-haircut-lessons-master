@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/online-haircut-lessons/static/css/main.bb643f80.css",
+    "main.js": "/online-haircut-lessons/static/js/main.fb85ae2c.js",
+    "static/media/image copy 2.png": "/online-haircut-lessons/static/media/image copy 2.0e3382022d39942d6083.png",
+    "static/media/image copy.png": "/online-haircut-lessons/static/media/image copy.3c32a7349ec4789baa64.png",
+    "static/media/image.png": "/online-haircut-lessons/static/media/image.0f89d744a4ecedf39705.png",
+    "index.html": "/online-haircut-lessons/index.html",
+    "main.bb643f80.css.map": "/online-haircut-lessons/static/css/main.bb643f80.css.map",
+    "main.fb85ae2c.js.map": "/online-haircut-lessons/static/js/main.fb85ae2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb643f80.css",
+    "static/js/main.fb85ae2c.js"
+  ]
+}
