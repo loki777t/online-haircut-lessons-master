@@ -1,0 +1,619 @@
+/* ProfilePage.css */
+
+.profile-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Шапка профиля */
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 4px solid #e6f7ff;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.username {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.user-email {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Карточка курсов */
+.courses-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+.courses-count {
+  color: #4361ee;
+  font-weight: 600;
+  background: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Элемент курса */
+.course-item {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.course-item:hover {
+  border-color: #4361ee;
+  box-shadow: 0 6px 15px rgba(67, 97, 238, 0.1);
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status.paid {
+  background: #e6f4ea;
+  color: #0d6e2e;
+}
+
+.status.unpaid {
+  background: #fff7e6;
+  color: #d46b08;
+}
+
+/* Прогресс бар */
+.progress-bar {
+  height: 8px;
+  background: #e8e8e8;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4361ee, #3a0ca3);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4361ee;
+}
+
+/* Кнопки курса */
+.course-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.start-learning-btn-profile,
+.choose-plan-btn,
+.download-certificate-btn-profile {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.start-learning-btn-profile {
+  background: linear-gradient(90deg, #4361ee, #3a0ca3);
+  color: white;
+}
+
+.start-learning-btn-profile:hover {
+  background: linear-gradient(90deg, #3a56d4, #2e0b8a);
+  transform: translateY(-2px);
+}
+
+.choose-plan-btn {
+  background: #eef2ff;
+  color: #4361ee;
+  border: 1px solid #4361ee;
+}
+
+.choose-plan-btn:hover {
+  background: #4361ee;
+  color: white;
+}
+
+.download-certificate-btn-profile {
+  background: #e6f4ea;
+  color: #0d6e2e;
+  border: 1px solid #a7d7b8;
+}
+
+.download-certificate-btn-profile:hover {
+  background: #0d6e2e;
+  color: white;
+}
+
+/* Секция сертификатов */
+.certificates-section {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.certificates-count {
+  color: #10b981;
+  font-weight: 600;
+  background: #e6f4ea;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* Карточка сертификата */
+.certificate-card {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+
+.certificate-card:hover {
+  border-color: #10b981;
+  box-shadow: 0 6px 15px rgba(16, 185, 129, 0.1);
+  transform: translateY(-4px);
+}
+
+.certificate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.certificate-icon {
+  font-size: 32px;
+  color: #10b981;
+}
+
+.certificate-badge {
+  background: #10b981;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.certificate-body h4 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.certificate-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.detail-label {
+  color: #666;
+}
+
+.detail-value {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.certificate-footer {
+  text-align: center;
+}
+
+.download-certificate-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #4361ee, #3a0ca3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.download-certificate-btn:hover {
+  background: linear-gradient(90deg, #3a56d4, #2e0b8a);
+  transform: translateY(-2px);
+}
+
+/* Нет сертификатов */
+.no-certificates {
+  text-align: center;
+  padding: 40px;
+  background: #fafafa;
+  border-radius: 15px;
+  border: 2px dashed #e8e8e8;
+}
+
+.certificate-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.certificate-placeholder .certificate-icon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.certificate-placeholder h4 {
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.certificate-placeholder p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Логаут секция */
+.logout-section {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logout-btn {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #4361ee, #3a0ca3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #3a56d4, #2e0b8a);
+  transform: translateY(-2px);
+}
+
+.logout-hint {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Модальное окно курса */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.modal-close:hover {
+  background: #4361ee;
+  color: white;
+}
+
+.modal-content h2 {
+  margin: 0;
+  padding: 30px 30px 20px;
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.course-description {
+  padding: 0 30px;
+  margin: 0 0 25px 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.course-stats {
+  display: flex;
+  gap: 20px;
+  padding: 20px 30px;
+  background: #fafafa;
+  margin: 0 30px 25px;
+  border-radius: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.modules-section {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.modules-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.modules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.module-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+}
+
+.module-name {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.module-lessons {
+  font-size: 14px;
+  color: #4361ee;
+  font-weight: 600;
+  background: #eef2ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  border-top: 1px solid #e8e8e8;
+  background: #fafafa;
+  border-radius: 0 0 20px 20px;
+}
+
+.purchase-btn {
+  flex: 1;
+  padding: 16px;
+  background: linear-gradient(90deg, #4361ee, #3a0ca3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.purchase-btn:hover {
+  background: linear-gradient(90deg, #3a56d4, #2e0b8a);
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  color: #666;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #f5f5f5;
+  border-color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 15px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .courses-card,
+  .certificates-section,
+  .logout-section {
+    padding: 20px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .course-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .course-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .start-learning-btn-profile,
+  .choose-plan-btn,
+  .download-certificate-btn-profile {
+    width: 100%;
+  }
+  
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    padding: 0;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+  }
+  
+  .purchase-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+
